@@ -1,0 +1,15 @@
+{
+  "name": "riwall",
+  "version": "1.0.0",
+  "description": "establecer una plataforma en línea que sirva como un espacio centralizado para que la comunidad de Riwi comparta y acceda a información relevante y de interés. Esta plataforma permitirá a los miembros de la comunidad estar al tanto de eventos, noticias, recursos, ventas, etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

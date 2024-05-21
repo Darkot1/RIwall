@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+}
+
+h1,h2,h3{
+    font-family:  "Ubuntu", sans-serif;
+    color: #161E4C;
+    font-weight: 800;
+
+}
+/* -------------------navbar-------------------- */
+
+.navbar {
+    font-family:  "Ubuntu", sans-serif;
+    font-weight: 800;
+    background-color: #D9D9D9;
+    --bs-navbar-padding-x: 108px;
+    --bs-navbar-padding-y: 0;
+}
+
+.collapse{
+    justify-content: flex-end;
+}
+
+.navbar-nav{
+    align-items: center;
+}
+
+.nav-link{
+    color: #161E4C;
+}
+
+/* -------------------footer-------------------- */
+.footer{
+    display: flex;
+    gap: 50px;
+    background-color: #D9D9D9;
+    padding: 10px 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerContain{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    text-align: center;
+}
+
+.footermargin{
+    margin-top: 70px;
+}
+.textAling{
+    text-align: center;
+}
+
+.textAlignC{
+text-align: center;
+}
+
+.logoText{
+    font-family:  "Ubuntu", sans-serif;
+    color: #161E4C;
+}
+
+.textContact{
+    font-family:  "Ubuntu", sans-serif;
+    color: #161E4C;
+}
+
+
+/* -------------------responsive-------------------- */
+@media screen and (max-width: 830px){
+    .socialResponsive{
+        display: none;
+    }
+    .footer{
+        flex-direction: column;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    .footerContain{
+        width: 100%;
+    }
+
+    .footermargin{
+        margin: 0;
+    }
+
+    body{
+        width: 100vw;
+    }
+}
+
+.btn{
+    background-color: #161E4C;
+    color: #fff;
+    font-family:  "Ubuntu", sans-serif;
+    font-weight: 800;
+}
+
+.btn:hover{
+    background-color: #161E4C;
+    color: #A79FF1;
+}
+
+.main{
+    background-color: #A79FF1;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 150px;
+}
+
+.button{
+    padding: 0 0 50px;
+}
+
+.mainContainCard{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.cardPost{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    box-shadow: 0px -1px 22px 5px rgba(0,0,0,0.75);
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.imageCard{
+    border-radius: 20px;
+
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+textarea.form-control:focus{
+    border-color: #A79FF1;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px #161E4C;
+    outline: 0 none;
+    background-color: #D9D9D9;
+    }
+textarea:focus, input:focus, input[type]:focus {
+        border-color: #A79FF1;
+        box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px #161E4C;
+        outline: 0 none;
+        background-color: #D9D9D9;
+}

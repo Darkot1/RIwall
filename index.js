@@ -36,3 +36,10 @@
       popup2.style.display = 'none';
     }
   });
+
+
+  const logout = document.querySelector("#logout");
+  logout.addEventListener("click",() =>{
+      alert("cerro sesion.")
+      window.location.href = '/s'
+  })

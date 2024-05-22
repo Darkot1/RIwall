@@ -9,41 +9,38 @@ h1,h2,h3{
 
 }
 /* -------------------navbar-------------------- */
-
 .navbar {
     font-family:  "Ubuntu", sans-serif;
     font-weight: 800;
     background-color: #D9D9D9;
     --bs-navbar-padding-x: 108px;
     --bs-navbar-padding-y: 0;
-}
-
-.collapse{
+  }
+  
+  .collapse{
     justify-content: flex-end;
-}
-
-.navbar-nav{
+  }
+  
+  .navbar-nav{
     align-items: center;
-}
-
-.nav-link{
+  }
+  
+  .nav-link{
     color: #161E4C;
-}
+  }
 
 /* -------------------footer-------------------- */
 .footer{
     display: flex;
-    gap: 50px;
     background-color: #D9D9D9;
-    padding: 10px 100px;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: stretch;
 }
 
 .footerContain{
     display: flex;
     flex-direction: column;
-    width: 33%;
+    width: 25%;
     text-align: center;
 }
 
@@ -52,6 +49,10 @@ h1,h2,h3{
 }
 .textAling{
     text-align: center;
+}
+.textContact a{
+  text-decoration: none;
+  color: #161E4C;
 }
 
 .textAlignC{

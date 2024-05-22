@@ -47,6 +47,13 @@ main{
     align-items: center;
 }
 
+
+.btnAdmin{
+  width: 30%;
+  color: #A79FF1;
+  
+}
+
 .container_main{
     height: 1270px;
     width: 80%;

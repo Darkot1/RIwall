@@ -172,7 +172,9 @@ textarea:focus, input:focus, input[type]:focus {
 }
 
 .card-header{
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .card-footer{

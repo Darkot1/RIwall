@@ -160,3 +160,12 @@ textarea:focus, input:focus, input[type]:focus {
         outline: 0 none;
         background-color: #D9D9D9;
 }
+
+.autor {
+    left: 60px;
+    margin: -20px;
+    font-style: italic;
+    font-size: 14px;
+    display: flex;
+    position: relative;
+}

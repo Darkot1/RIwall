@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", function() {
             const imgDiv = document.createElement('img');
             imgDiv.src = e.target.result;
             imgDiv.classList.add('imgPost');
-            imgDiv.alt = 'Imagen publicada por Usuario'; // Puedes ajustar esto
-            imgDiv.style.width = '100%'; // Establece el ancho a 300 píxeles (puedes ajustar según sea necesario)
+            imgDiv.alt = 'Imagen publicada por Usuario'; 
+            imgDiv.style.width = '100%'; 
 
             bodyDivLeft.appendChild(imgDiv);
         };

@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-h1,h2{
+h1,h2,h3{
   font-family:  "Ubuntu", sans-serif;
   color: #161E4C;
   font-weight: 800;
@@ -193,41 +193,43 @@ main{
 
 
   /*------------------SECCION FOOTER------------------------------------*/
-  .footer{
-    display: flex;
-    background-color: #D9D9D9;
-    justify-content: space-evenly;
-    align-items: stretch;
+.footer {
+  display: flex;
+  background-color: #D9D9D9;
+  justify-content: space-evenly;
+  align-items: stretch;
 }
 
-.footerContain{
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    text-align: center;
+.footerContain {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  text-align: center;
 }
 
-.footermargin{
-    margin-top: 70px;
+.footermargin {
+  margin-top: 70px;
 }
-.textAling{
-    text-align: center;
+
+.textAling {
+  text-align: center;
 }
-.textContact a{
+
+.textContact a {
   text-decoration: none;
   color: #161E4C;
 }
 
-.textAlignC{
-text-align: center;
+.textAlignC {
+  text-align: center;
 }
 
-.logoText{
-    font-family:  "Ubuntu", sans-serif;
-    color: #161E4C;
+.logoText {
+  font-family: "Ubuntu", sans-serif;
+  color: #161E4C;
 }
 
-.textContact{
-    font-family:  "Ubuntu", sans-serif;
-    color: #161E4C;
+.textContact {
+  font-family: "Ubuntu", sans-serif;
+  color: #161E4C;
 }

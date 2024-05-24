@@ -49,4 +49,4 @@ function moveCarousel() {
 }
 
 // Iniciar el movimiento del carrusel
-setInterval(moveCarousel, 2100); 
+setInterval(moveCarousel, 2800); 

@@ -128,6 +128,7 @@ main{
 }
 
 .cardInfo:hover{
+  scale: 1.1;
   box-shadow: 0px 0px 40px 12px #27368a;
 }
 

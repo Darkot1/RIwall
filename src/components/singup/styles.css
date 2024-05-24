@@ -55,9 +55,6 @@ h1,h2,h3{
 
 .form-control{
     background-color: #A79FF1;
-    color: #F3EFFA;
-    font-family:  "Ubuntu", sans-serif;
-    font-weight: 500;
 }
 
 textarea.form-control:focus{
@@ -71,10 +68,6 @@ textarea:focus, input:focus, input[type]:focus {
         box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px #161E4C;
         outline: 0 none;
         background-color: #A79FF1;
-}
-
-.form-control{
-    border-color: #A79FF1;
 }
 
 a{

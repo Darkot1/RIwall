@@ -77,29 +77,31 @@
                                 <h1 class="modal-title fs-5" id="exampleModalLabel">New Post</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
+                            <form id="postForm">
                             <div class="modal-body">
                                 <div class="input-group flex-nowrap">
                                     <span class="input-group-text" id="addon-wrapping">Post Tittle</span>
-                                    <input type="text" class="form-control" placeholder="Post Tittle" aria-label="postTittle" aria-describedby="addon-wrapping">
+                                    <input id="postTittle" type="text" class="form-control" placeholder="Post Tittle" aria-label="postTittle" aria-describedby="addon-wrapping">
                                 </div>
                                 <div class="form-floating">
                                     <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
                                     <label for="floatingTextarea2">Post Description</label>
                                 </div>
                                 <div class="input-group mb-3">
-                                    <input type="file" class="form-control" id="inputGroupFile02">
+                                    <input type="file" accept="image/*" class="form-control" id="inputGroupFile02">
                                     <label class="input-group-text" for="inputGroupFile02">Upload Image</label>
                                 </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn">Post</button>
+                                <button id="postWall" type="button" class="btn">Post</button>
                             </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="mainContain mainContainCard">
+            <div id="post" class="mainContain mainContainCard">
                 <div class="card text-center">
                     <div class="card-header">
                         <div class="postedBy">Posted by: Santiago Londoño</div>

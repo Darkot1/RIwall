@@ -58,7 +58,317 @@
             </div>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <section>
+            <div>
+                <div class="centro">
+                    <button type="button" class="botonObjeto btn btn-primary " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      <p>agregar objeto perdido</p>
+                    </button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <div class="Table2">
+                <div class="tablecontent">
+                <div class="newImg">
+                    <h2>Añadir imagen</h2>     
+                    <input type="file" id="image-input" accept="image/*">
+                </div>
+                      <div class="containerForm">
+                        <form id="nameForm">
+                          <label for="firstName">Encontrado por:</label>
+                          <input type="text" id="firstName" name="firstName" autocomplete="off" required>
+                          <label for="lastName">Reclamar en:</label>
+                          <input type="text" id="lastName" name="lastName" autocomplete="off" required>
+                          <button type="submit">Enviar formulario</button>
+                        </form>
+                    </div>
+                        </div>
+                        <div class="description">
+                            <h2>descripcion</h2>
+                            <textarea name="area" id="area" placeholder="ten en cuenta en darle enviar al formulario y luego cerrar el modal agregando la img"></textarea>
+                        </div>
+                        </div>
+                        </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+                              <button type="button" class="btnModal btn btn-primary buttonForm" id="upload-button" data-bs-dismiss="modal">Enviar modal</button>
+                              <input type="image" src="" alt="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- objects lost container  -->
+    <section>
+        <div class="container">
+          <div>
+            <img src="/src/assets/images/img1.jpeg" alt="" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            </button>                
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">object</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="letterItems">
+                    <div>
+                      <p><div class="letter"><strong> Encontrado por =</strong><br>Sebastian Vera</div></p>
+                      <div class="letter"><strong> Reclamar en =</strong><br>Recepcion</div>
+                      <div class="letter"><strong>descripcion</strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veritatis tempora quia laboriosam porro illum maiores inventore fugit, quisquam qui impedit. Voluptatum nihil similique voluptas in ex, tenetur quam numquam.</div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div>
+          <img src="/src/assets/images/img2.jpeg" alt="" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+          </button>                
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">object</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="letterItems">
+                  <div>
+                    <p><div class="letter"><strong> Encontrado por =</strong><br>Sebastian Serna</div></p>
+                    <div class="letter"><strong> Reclamar en =</strong><br>Recepcion</div>
+                    <div class="letter"><strong>descripcion</strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veritatis tempora quia laboriosam porro illum maiores inventore fugit, quisquam qui impedit. Voluptatum nihil similique voluptas in ex, tenetur quam numquam.</div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div>
+        <img src="/src/assets/images/img1.jpeg" alt="" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+        </button>                
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">object</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="letterItems">
+                <div>
+                  <p><div class="letter"><strong> Encontrado por =</strong><br>Santiago londoño</div></p>
+                  <div class="letter"><strong> Reclamar en =</strong><br>Recepcion</div>
+                  <div class="letter"><strong>descripcion</strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veritatis tempora quia laboriosam porro illum maiores inventore fugit, quisquam qui impedit. Voluptatum nihil similique voluptas in ex, tenetur quam numquam.</div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <img src="/src/assets/images/img2.jpeg" alt="" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+        </button>                
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">object</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="letterItems">
+                <div>
+                  <p><div class="letter"><strong> Encontrado por =</strong><br>Daniel Castaño</div></p>
+                  <div class="letter"><strong> Reclamar en =</strong><br>Recepcion</div>
+                  <div class="letter"><strong>descripcion</strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veritatis tempora quia laboriosam porro illum maiores inventore fugit, quisquam qui impedit. Voluptatum nihil similique voluptas in ex, tenetur quam numquam.</div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <div>
+            <img src="/src/assets/images/img1.jpeg" alt="" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            </button>                
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">object</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="letterItems">
+                    <div>
+                      <p><div class="letter"><strong> Encontrado por =</strong><br>Sebastian Vera</div></p>
+                      <div class="letter"><strong> Reclamar en =</strong><br>Recepcion</div>
+                      <div class="letter"><strong>descripcion</strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veritatis tempora quia laboriosam porro illum maiores inventore fugit, quisquam qui impedit. Voluptatum nihil similique voluptas in ex, tenetur quam numquam.</div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img src="/src/assets/images/img2.jpeg" alt="" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+            </button>                
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">object</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="letterItems">
+                    <div>
+                      <p><div class="letter"><strong> Encontrado por =</strong><br>Sebastian Serna</div></p>
+                      <div class="letter"><strong> Reclamar en =</strong><br>Recepcion</div>
+                      <div class="letter"><strong>descripcion</strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veritatis tempora quia laboriosam porro illum maiores inventore fugit, quisquam qui impedit. Voluptatum nihil similique voluptas in ex, tenetur quam numquam.</div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img src="/src/assets/images/img1.jpeg" alt="" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            </button>                
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">object</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="letterItems">
+                    <div>
+                      <p><div class="letter"><strong> Encontrado por =</strong><br>Santiago londoño</div></p>
+                      <div class="letter"><strong> Reclamar en =</strong><br>Recepcion</div>
+                      <div class="letter"><strong>descripcion</strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veritatis tempora quia laboriosam porro illum maiores inventore fugit, quisquam qui impedit. Voluptatum nihil similique voluptas in ex, tenetur quam numquam.</div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img src="/src/assets/images/img2.jpeg" alt="" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            </button>                
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">object</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="letterItems">
+                    <div>
+                      <p><div class="letter"><strong> Encontrado por =</strong><br>Daniel Castaño</div></p>
+                      <div class="letter"><strong> Reclamar en =</strong><br>Recepcion</div>
+                      <div class="letter"><strong>descripcion</strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veritatis tempora quia laboriosam porro illum maiores inventore fugit, quisquam qui impedit. Voluptatum nihil similique voluptas in ex, tenetur quam numquam.</div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img src="/src/assets/images/img1.jpeg" alt="" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            </button>                
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">object</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="letterItems">
+                    <div>
+                      <p><div class="letter"><strong> Encontrado por =</strong><br>Sebastian Vera</div></p>
+                      <div class="letter"><strong> Reclamar en =</strong><br>Recepcion</div>
+                      <div class="letter"><strong>descripcion</strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veritatis tempora quia laboriosam porro illum maiores inventore fugit, quisquam qui impedit. Voluptatum nihil similique voluptas in ex, tenetur quam numquam.</div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+            <!-- user img -->           
+            <div id="image-container" type="button" class="userImg btn" data-bs-toggle="modal" data-bs-target="#moralName">
+                <img id="uploaded-image" src="" alt="img acá">
+                <div class="modal" tabindex="-1" id="moralName">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">object lost</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div id="InfoObject"></div>
+                        <h3>descripcion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi numquam voluptas vel distinctio, consequuntur a quaerat deleniti sint in quia nostrum, non exercitationem, ad recusandae explicabo. Quibusdam totam magnam doloribus.</p>                     
+                        <div id="displayInfo"></div>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>               
+            </div>
+    </section>
+     
+    </main>
 
 
 
@@ -88,7 +398,7 @@
         </div>
     </footer>
 
-
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>

@@ -48,18 +48,25 @@ main{
 }
 
 
-.btnAdmin{
-  width: 30%;
+#buttonCard{
+  width: 18%;
   color: #A79FF1;
+  background-color: #161E4C;
+  border-radius: 32px;
+  padding: 8px 20px;
   
 }
-
+#buttonCard:hover{
+  background-color: #27368a;
+  color: #fff;
+}
 .container_main{
     height: 1270px;
     width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 22px;
     
 }
 
@@ -67,6 +74,12 @@ main{
     font-weight: bold;
     font-size: 38px;
     color: var(--footer-tittle);
+    transition: 1s;
+}
+.tittle_bar_link:hover{
+  border-radius: 10px;
+  color: #0026ff;
+
 }
 
 .container_information, .container_wall, .container_objectsLost{
@@ -74,7 +87,7 @@ main{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -84,9 +97,13 @@ main{
     border-radius: 28px;
     background-color: blueviolet;
     display: flex;
+    gap: 20px;
     align-items: center;
     justify-content: space-evenly;
     box-shadow: 0px -1px 22px 5px rgba(0,0,0,0.75);
+    overflow: hidden;
+    scroll-behavior: smooth;
+    
 }
 .cardWall_container{
     background-color: brown;
@@ -106,6 +123,12 @@ main{
     background-color: var(--card-color-primary);
     border-radius: 24px;
     cursor: pointer;
+    box-shadow: 10px 10px 20px #000;
+    transition: 1s;
+}
+
+.cardInfo:hover{
+  box-shadow: 0px 0px 40px 12px #27368a;
 }
 
 .cardInfo h3{
@@ -117,9 +140,11 @@ main{
 .cardInfo p{
     height: 100px;
     width: 200px;
+    padding: 0 12px 12px 12px;
     margin: 0;
     overflow: hidden;
 }
+
 
 /*------------------------------STYLE CARDS WALL AND INFO CONTENT CARD------------------------------*/
 
@@ -131,7 +156,7 @@ main{
     align-items: center;
     justify-content: center;
     background-color: var(--card-color-secundary);
-    border-radius: 34px;
+    border-radius: 24px;
     cursor: pointer;
 }
 .cardWall h3{

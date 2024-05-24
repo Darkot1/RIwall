@@ -161,7 +161,7 @@ label {
   margin-bottom: 5px;
 }
 
-#firstName{
+#claim{
   width: 130px;
   padding: 8px;
   margin-bottom: 10px;
@@ -169,7 +169,7 @@ label {
   border: none;
 }
 
-#lastName{
+#found{
   width: 130px;
   padding: 8px;
   margin-bottom: 10px;

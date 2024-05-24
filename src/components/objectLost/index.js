@@ -24,19 +24,21 @@ uploadButton.addEventListener('click', () => {
 // form
 
 document.addEventListener('DOMContentLoaded', function () {
-  const form = document.getElementById('nameForm');
-  const InfoObject = document.getElementById('displayInfo');
+  const form = document.getElementById('FormObjects');
+  const InfoObject = document.getElementById('InfoObject');
+  const InfoName = document.getElementById('InfoName');
 
   form.addEventListener('submit', function (event) {
     event.preventDefault();
     
-    const firstName = document.getElementById('firstName').value;
-    const lastName = document.getElementById('lastName').value;
+    const claim = document.getElementById('claim').value;
+    const found = document.getElementById('found').value;
 
-    const fullName = `${firstName}`;
-    const seconName = `${lastName}`
+    const claimFor = `${claim}`;
+    const foundIn = `${found}`
 
-    InfoObject.innerHTML = `<p>Encontrado por: ${fullName}</p>`;
-    InfoObject.innerHTML = `<p>Reclamar en: ${seconName}</p>`;
+    InfoName.innerHTML = `<p>Encontrado por: ${claimFor}</p>`
+    InfoObject.innerHTML = `<p>Reclamar en: ${foundIn}</p>`;
+
   });
 });

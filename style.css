@@ -24,6 +24,12 @@ a{
   --bs-navbar-padding-x: 108px;
   --bs-navbar-padding-y: 0;
 }
+header{
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 7px #000;
+}
+
 
 .collapse{
   justify-content: flex-end;
@@ -49,16 +55,18 @@ main{
 
 
 #buttonCard{
-  width: 18%;
+  width: 14%;
   color: #A79FF1;
   background-color: #161E4C;
   border-radius: 32px;
   padding: 8px 20px;
-  
+  font-weight: bolder;  
+  transition: 0.34s;
 }
 #buttonCard:hover{
   background-color: #27368a;
   color: #fff;
+  scale: 1.1;
 }
 .container_main{
     height: 1270px;
@@ -70,16 +78,30 @@ main{
     
 }
 
+
 .tittle_bar{
     font-weight: bold;
-    font-size: 38px;
+    font-size: 48px;
     color: var(--footer-tittle);
-    transition: 1s;
+    transition: 0.34s;  
+    border-radius: 10px;
 }
 .tittle_bar_link:hover{
   border-radius: 10px;
-  color: #0026ff;
+  color: #1e33ad;
   scale: 1.07;
+}
+.link_tittle_container{
+  width: 40%;
+  transition:  1s;
+  text-align: center;
+}
+
+.link_tittle_container:hover{
+  width: 75%;
+  justify-content: center;
+  background-color: #161e4c2f;
+  border-radius: 24px;
 }
 
 .container_information, .container_wall, .container_objectsLost{
@@ -89,6 +111,7 @@ main{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 .cardInfo_container, .cardWall_container, .cardObjects_container{
@@ -99,24 +122,37 @@ main{
     gap: 20px;
     align-items: center;
     justify-content: space-evenly;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.0);
     overflow: hidden;
-    scroll-behavior: smooth;
-    
 }
 .cardInfo_container{
   background-color: transparent;
   transition: 1s;
 }
 .cardInfo_container:hover{
-  background-color: #0026ff;
+  background-color: #0600552d;
   box-shadow: 0px -1px 32px 5px rgba(0,0,0,0.75);
 }
 .cardWall_container{
     background-color: transparent;
+    transition: 1s;
+}
+
+.cardWall_container:hover{
+  background-color: #0600552d;
+  box-shadow: 0px -1px 20px 5px rgba(0,0,0,0.75);
 }
 .cardObjects_container{
-    background-color: chocolate;
+    background-image: url(/src/assets/images/objects_lots_img.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+
+.cardObjects_container:hover{
+  box-shadow: 0px -1px 20px 5px rgba(0,0,0,0.75);
+  scale: 1.1;
+  filter: brightness(50%);
 }
 
 /*------------------------------STYLE CARDS OFFICIAL INFORMATION AND INFO CONTENT CARD------------------------------*/
@@ -132,6 +168,7 @@ main{
     cursor: pointer;
     box-shadow: 10px 10px 20px #000;
     transition: 1s;
+
 }
 
 .cardInfo:hover{
@@ -164,8 +201,15 @@ main{
     align-items: center;
     justify-content: center;
     background-color: var(--card-color-secundary);
+    box-shadow: 10px 10px 20px #000000;
     border-radius: 24px;
     cursor: pointer;
+    transition: 1s;
+}
+
+.cardWall:hover{
+  scale: 1.1;
+  box-shadow: 0px 0px 20px 5px #000000;
 }
 .cardWall h3{
     margin: 0;
@@ -178,6 +222,10 @@ main{
     overflow: hidden;
 }
 
+.cardObjects{
+  width: 100%;
+  height: 100%;
+}
 /*------------------------------------STYLE POPUP-----------------------*/
 
 .popup {

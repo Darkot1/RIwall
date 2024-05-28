@@ -1,3 +1,25 @@
 {
-    
+ "Users":[
+{
+    "id":1,
+    "nombre":"sebastian",
+    "correo":"sebastian@gmail.com",
+    "contraseña":"12345"
+ },
+ {
+    "id":2,
+    "nombre":"vera",
+    "correo":"vera@gmail.com",
+    "contraseña":"12345"
+ },
+ {
+    "id":3,
+    "nombre":"santiago",
+    "correo":"santiago@gmail.com",
+    "contraseña":"12345"
+ }
+
+
+]
+
 }

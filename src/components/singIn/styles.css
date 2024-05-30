@@ -117,6 +117,7 @@ label{
     color: #161E4C;
     width: 100%;
     text-align: center;
+    border-radius: 24px 2px 24px 2px;
 }
 
 form{

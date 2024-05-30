@@ -1,145 +1,121 @@
- document.addEventListener("DOMContentLoaded", () => {
-    const postcoment = document.getElementById("postcoment");
-    const containerCard = document.querySelector(".card-bodyRight");
-  if (postcoment) {
+const responder = document.getElementById('responderBtn');
 
-    postcoment.addEventListener("click", () => {
-      // Capturar los valores de los inputs
+responder.addEventListener("click", (event) => {
+    const card = event.target.closest('.card');
+    const inputResponder = card.querySelector('.Responder').value;
+    const idRespuesta = card.querySelector('.respuestas');
 
-      const postDescription =
-        document.getElementById("floatingTextarea2"); // Cambio aquí
+    const divCreado = document.createElement('div');
+    divCreado.classList.add('respuesta1');
 
-      // Verificar si los campos requeridos están llenos
-      if (!postDescription.value) {
-        alert("Por favor, completa todos los campos.");
-        return;
-      }
+    const contenidoCreado = document.createElement('div');
+    contenidoCreado.classList.add('contenidoRespuesta');
 
-      // Crear la publicación
-      const cardDiv = document.createElement("div");
-      cardDiv.classList.add("card-comment");
+    const pDivCreado = document.createElement('p');
+    pDivCreado.classList.add('descripcionRespuesta');
+    pDivCreado.innerText = inputResponder;
 
-      const bodyDiv = document.createElement("h5");
-      bodyDiv.classList.add("comment-body");
+    const footerRespuesta = document.createElement('div');
+    footerRespuesta.classList.add('footerRespuesta');
 
-      const dateDiv = document.createElement("h3");
-      dateDiv.classList.add("comment-date");
+    const PFR = document.createElement('p');
+    PFR.classList.add('byRespuesta');
+    PFR.textContent = "By: (USUARIO)";
 
-      const btnDiv = document.createElement("div")
-      btnDiv.classList.add("comment-action")
+    const DFR = document.createElement('p');
+    DFR.classList.add('dateRespuesta');
+    const date = new Date();
+    const postDate = date.toLocaleString();
+    DFR.textContent = postDate;
 
-      const textarea = document.createElement("textarea")
-      textarea.classList.add("form-control")
-      dateDiv.appendChild(textarea)
-      
-      const btnReply = document.createElement("button")
-      btnReply.classList = "btn btn-primary"
-      btnReply.textContent = "Reply";
-    
-   
-      btnReply.addEventListener("click",()=>{
-        const postDescription = document.createElement("div");
-       
-        // Verificar si los campos requeridos están llenos
-   /*      if (!postDescription.value) {
-        alert("Por favor, completa todos los campos.");
-        return;
-      }  */
+    contenidoCreado.appendChild(pDivCreado);
+    footerRespuesta.appendChild(PFR);
+    footerRespuesta.appendChild(DFR);
+    divCreado.appendChild(contenidoCreado);
+    divCreado.appendChild(footerRespuesta);
 
-      // Crear la publicación
-      const cardDiv = document.createElement("div");
-      cardDiv.classList.add("card-comment");
-
-      const bodyDiv = document.createElement("h5");
-      bodyDiv.classList.add("comment-body");
-
-      const dateDiv = document.createElement("h3");
-      dateDiv.classList.add("comment-date");
-
-      const btnDiv = document.createElement("div")
-      btnDiv.classList.add("comment-action")
-      const date = new Date();
-      const postDate = date.toLocaleString();
-
-      bodyDiv.textContent = postDescription.value
-      dateDiv.textContent = postDate
-
-      btnDiv.appendChild(btnReply)
-
-      cardDiv.appendChild(bodyDiv)
-      cardDiv.appendChild(dateDiv)
-      cardDiv.appendChild(btnDiv)
-
-      containerCard.appendChild(cardDiv)
-      postDescription.value = "";
-
-      const modal = bootstrap.Modal.getInstance(
-        document.getElementById("exampleModal")
-      );
-
-      modal.hide();
-
-      });
-        
-
-      const date = new Date();
-      const postDate = date.toLocaleString();
-
-      bodyDiv.textContent = postDescription.value
-      dateDiv.textContent = postDate
-
-      btnDiv.appendChild(btnReply)
-
-      cardDiv.appendChild(bodyDiv)
-      cardDiv.appendChild(dateDiv)
-      cardDiv.appendChild(btnDiv)
-
-      containerCard.appendChild(cardDiv)
+    idRespuesta.appendChild(divCreado);
 
     
-      // Limpiar los inputs
-      postDescription.value = "";
-
-      // Cerrar el modal
-      const modal = bootstrap.Modal.getInstance(
-        document.getElementById("exampleModal")
-      );
-      modal.hide();
-    });
-  } else {
-    console.error("No se pudo encontrar el botón de publicar.");
-  }
-
+    card.querySelector('.Responder').value = '';
 });
 
+const añadirTema = document.getElementById('añadirTema');
 
+añadirTema.addEventListener("click", () => {
+    const tituloTema = document.getElementById('recipient-name').value;
+    const descripcionTema = document.getElementById('message-text').value;
+    const dateT = new Date();
+    const postDateT = dateT.toLocaleString();
 
-/* 
-document.addEventListener("DOMContentLoaded", () => {
-  const postComent = document.getElementById("postcoment");
-  const containerCard = document.querySelector(".card-bodyRight");
-  const postDescription = document.getElementById("floatingTextarea2");
-
-  postComent.addEventListener("click", () => {
-    if (!postDescription.value) {
-      alert("Por favor, completa todos los campos.");
-      return;
-    }
-
-    containerCard.innerHTML += `
-        <div class="card-comment">
-          <h5 class="comment-body">${postDescription.value}</h5>  
-          <h3 class="comment-date">${new Date().toLocaleString()}</h3> 
-            
-          <div class="comment-action">   
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Reply
-            </button>
-          </div> 
+    const nuevaCard = document.createElement('div');
+    nuevaCard.classList.add('card');
+    nuevaCard.innerHTML = `
+    <div class="card-header">
+        By: (USUARIO)
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">${tituloTema}</h5>
+        <p class="card-text">${descripcionTema}</p>
+        <div class="respuestas">
+            <p class="pRespuesta">Respuestas:</p>
         </div>
+        <textarea class="Responder" placeholder="Responder"></textarea>
+        <div class="button"><button class="btn btn-primary responderBtn">Responder</button></div>
+    </div>
     `;
 
-    postDescription.value = "";
-  });
+    const main = document.getElementById('main');
+    main.insertBefore(nuevaCard, main.firstChild);
+
+    // Añadir el evento al botón de respuesta de la nueva tarjeta
+    const responderBtn = nuevaCard.querySelector('.responderBtn');
+    responderBtn.addEventListener("click", (event) => {
+        const card = event.target.closest('.card');
+        const inputResponder = card.querySelector('.Responder').value;
+        const idRespuesta = card.querySelector('.respuestas');
+
+        const divCreado = document.createElement('div');
+        divCreado.classList.add('respuesta1');
+
+        const contenidoCreado = document.createElement('div');
+        contenidoCreado.classList.add('contenidoRespuesta');
+
+        const pDivCreado = document.createElement('p');
+        pDivCreado.classList.add('descripcionRespuesta');
+        pDivCreado.innerText = inputResponder;
+
+        const footerRespuesta = document.createElement('div');
+        footerRespuesta.classList.add('footerRespuesta');
+
+        const PFR = document.createElement('p');
+        PFR.classList.add('byRespuesta');
+        PFR.textContent = "By: (USUARIO)";
+
+        const DFR = document.createElement('p');
+        DFR.classList.add('dateRespuesta');
+        const date = new Date();
+        const postDate = date.toLocaleString();
+        DFR.textContent = postDate;
+
+        contenidoCreado.appendChild(pDivCreado);
+        footerRespuesta.appendChild(PFR);
+        footerRespuesta.appendChild(DFR);
+        divCreado.appendChild(contenidoCreado);
+        divCreado.appendChild(footerRespuesta);
+
+        idRespuesta.appendChild(divCreado);
+
+        
+        card.querySelector('.Responder').value = '';
+    });
+    // Cerrar el modal
+const modal = document.getElementById('exampleModal');
+const modalInstance = bootstrap.Modal.getInstance(modal);
+modalInstance.hide();
+
+// Limpiar el input y el textarea
+document.getElementById('recipient-name').value = '';
+document.getElementById('message-text').value = '';
+
 });
- */

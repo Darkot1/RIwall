@@ -58,128 +58,73 @@
             </div>
         </nav>
     </header>
-    <main> 
-        <!------ BOTON  Y CONTENIDO DE REALIZAR UNA PREGUNTA ------->
-        <div class="main">
-            <div class="mainContain button">
-              
-                <div class="card-header">                         
-                      <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal1">COMENTAR</button>
-                     
-                      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                              <div class="modal-content">
-                                  <div class="modal-header">
-                                      <h1 class="modal-title fs-5" id="exampleModalLabel">QUIERES HACER UN COMENTARIO?</h1>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                  </div>
-                                  <div class="modal-body">
-                                    ESTAS SEGURO DE HACER UN COMENTARIO
-                                  </div>
-                                  <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">NO</button>
-                                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                       SI 
-                                      </button>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                </div>
-            
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">HAZ TU COMENTARIO</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                              
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
-                                    <label for="floatingTextarea2">Post Description(DescripCION)</label>
+    <main>
+        <div class="nuevotema">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Añadir tema de discusión</button>
+    
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Nuevo tema de discusión.</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Titulo: </label>
+                                    <input type="text" class="form-control" id="recipient-name">
                                 </div>
-                                
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn" id="postcoment" data-bs-dismiss="modal">Post</button>
-                            </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Descripción: </label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button id="añadirTema" type="button" class="btn btn-primary">Añadir</button>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-            <div class="card-body">
-                        
-                <div class="card-bodyRight">
-                    
-                    <div class="card-comment">
-                        <h5 class="comment-body">QUE SE HACER CON LA ETIQUETA REMOVE AYUDENME PLEASE</h5>  
-                        <h3 class="comment-date"> 22/05/2024 - 20:45 </h3> 
-                          
-                        <div class="comment-action">   
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                RESPONDER
-                            </button> 
-                          
-                        </div> 
-                    </div>
-
-               
-                </div>  
-          
-                <div class="father-aside" id="aside">
-                    <div class="title-infor">
-                        <h2>INFORMACION</h2>
-                      
-                        <div class="aside-son">  1 </div>
-                        <div  class="aside-son"> 2 </div>
-                        <div  class="aside-son"> 3 </div> 
-                        <div  class="aside-son"> 4</div>
-                        
-                           
-                            
-                    </div>
-
-
-                  
-                          
-            
+        <div id="main" class="main">
+            <div class="card">
+                <div class="card-header">
+                    By: (USUARIO)
                 </div>
-                
-            
+                <div class="card-body">
+                    <h5 class="card-title">¿Cómo realizar un bucle while</h5>
+                    <p class="card-text">Compañeros, deseo realizar un programa me permita hacer una lista de supermercado, ¿Como hago?</p>
+                    <div id="IDrespuestas" class="respuestas">
+                        <p class="pRespuesta">Respuestas:</p>
+                        <div class="respuesta1">
+                            <div class="contenidoRespuesta">
+                                <p class="descripcionRespuesta">Hola, lo puedes hacer de esta manera: 
+                                    for (let i = 3; i>=0; i--){
+                                        console.log(i);} con este codigo tendras una idea de hacerlo
+                                </p>
+                            </div>
+                            <div class="footerRespuesta">
+                                <p class="byRespuesta">By:(USUARIO)</p>
+                                <p class="dateRespuesta">02/04/2024, 00:21</p>
+                            </div>
+                        </div>
+                    </div>
+                    <textarea class="Responder" placeholder="Responder" id="responderText"></textarea>
+                    <div class="button"><button id="responderBtn" class="btn btn-primary">Responder</button></div>
+                </div>
+            </div>
+        </div>
         
-            </div>
-
-  
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="staticBackdropLabel">QUIERES RESPONDER ESTA PREGUNTA?</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                            Estas seguro de responder a este comentario?
-                    </div>
-                    <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">NO</button>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                SI
-                            </button>
-                    </div>
-                </div>
-            </div>
+        <div class="aside" id="aside">
+            <h2>INFORMACION</h2>
+            <div class="aside-son">  1 </div>
+            <div  class="aside-son"> 2 </div>
+            <div  class="aside-son"> 3 </div> 
+            <div  class="aside-son"> 4</div>
         </div>
-
-
-   
-
     </main>
 
  

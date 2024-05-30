@@ -15,7 +15,6 @@ uploadButton.addEventListener('click', () => {
     const imageData = reader.result;
     uploadedImages.push(imageData);
     uploadedImage.src = imageData;
-    imageContainer.style.backgroundImage = `url(${imageData})`;
   };
 
   reader.readAsDataURL(file);

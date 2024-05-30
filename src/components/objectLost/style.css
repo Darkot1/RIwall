@@ -101,6 +101,8 @@ body{
   justify-content: center;
   text-align: center;
   overflow: hidden;
+  border-radius: 2%;
+  box-shadow: 0 2px 20px rgba(16, 22, 26, 0.3);
 }
 
 .botonObjeto p{
